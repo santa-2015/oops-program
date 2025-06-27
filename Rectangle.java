@@ -1,39 +1,24 @@
-package oopsProblems;
+package PolymorphismInheritance;
 
-public class Rectangle {
+public class Rectangle extends Shape{
 
-	double width;
-	double height;
+	private double height;
+	private double width;
 	
-	public Rectangle(double width,double height) {
-		this.width=width;
+	public  Rectangle(double height,double width) {
 		this.height=height;
-		
-	}
-	public double getWidth() {
-		return width;
-	}
-	public void setWidth(double width) {
 		this.width=width;
 	}
-	public double getHeight() {
-		return height;
-	}
-	public void setHeight(double height) {
-		this.height=height;
-	}
-	public double getArea() {
+
+	@Override
+	public double Area() {
+		// TODO Auto-generated method stub
 		return width*height;
-		
-	}
-	public double getPerimeter() {
-		return 2*(width+height);
-	}
-	public static void main(String[]args) {
-		Rectangle rectangle=new Rectangle(56,5666);
-		System.out.println("The area and perimeter of given rectangle is"+ rectangle.getArea()+"and"+rectangle.getPerimeter()+"respectively");
 	}
 	
 	
-	}
+	
 
+	
+
+}

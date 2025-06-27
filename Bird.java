@@ -1,4 +1,6 @@
-package oopsProblems;
+package PolymorphismInheritance;
+
+import oopsProblems.Animal;
 
 public class Bird extends Animal{
 
